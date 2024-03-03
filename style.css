@@ -35,7 +35,7 @@ background-color: #f2f2f2;
 
 .bottom_button a {
 background-color: #0d0d0d;
-padding: 2px 9px;
+padding: 4px 12px;
 position: fixed;
 border-radius: 4px;
 bottom: 20px;
@@ -174,10 +174,10 @@ scrollbar-width: none;
 }
 .car_d{
 padding: 14px 0px;
-  background-color:white;
+  background-color:yellow;
 }
 .car_d:nth-last-child(even) {
-margin:0 16px;
+margin:0 20px;
 }
 .car_d a {
 border: 1px solid #0d0d0d;
