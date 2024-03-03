@@ -453,6 +453,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(targetId).scrollIntoView({
       behavior: "smooth"
     });
+
+    // Add margin-top after scrolling to the section
+    const navbarHeight = document.querySelector('.scrolling_wrapper').offsetHeight;
+    window.scrollBy(0, -navbarHeight); // Adjusts the scroll position by subtracting the height of the navbar
   }
 });
   </script>
