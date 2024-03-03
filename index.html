@@ -28,7 +28,6 @@
 </a>
 </div>
 <!-- header menu end -->
-
 <div class="scrolling_wrapper">
 <div class="car_d">
     <a href="#website">Website</a>
@@ -424,7 +423,7 @@ type();
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   // Get all anchor links inside the navigation
   const navLinks = document.querySelectorAll(".car_d a");
 
@@ -456,7 +455,7 @@ type();
     });
 
     // Add margin-top after scrolling to the section
-    const navbarHeight = document.querySelector('.scrollIntoView').offsetHeight;
+    const navbarHeight = document.querySelector('.scrolling_wrapper').offsetHeight;
     window.scrollBy(0, -navbarHeight); // Adjusts the scroll position by subtracting the height of the navbar
   }
 });
