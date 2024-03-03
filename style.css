@@ -53,23 +53,77 @@ position: relative;
 }
 .eyes {
 border: 1px solid #29bd42;
-height: 10px;
+height: 13px;
 width:9px;
 background-color:#29bd42;
 top:30px;
 left: 10px;
 position: absolute;
 animation: linear run 4s infinite;
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+z-index: 15;
+}
+.eyes1{
+border: 1px solid #29bd42;
+height: 13px;
+width:9px;
+background-color:#29bd42;
+top:30px;
+left: 25px;
+position: absolute;
+animation: linear run 4s infinite;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+z-index: 15;
+}
+.eyes2{
+border: 2px solid #29bd42;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+height: 1px;
+width:24px;
+background-color:#29bd42;
+top:26px;
+left: 10px;
+position: absolute;
+animation: linear run 4s infinite;
+z-index: 15;
 }
 @keyframes run {
 0% {
 top: 30px;
 }
 50% { 
-top: 40px; 
+top: 41px; 
 }
 100% {
 top: 30px;     
+}
+}
+.eyes3{
+border: 1px solid #29bd42;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+height: 0px;
+width:28px;
+background-color:#29bd42;
+top:54px;
+left: 7px;
+position: absolute;
+animation: linear run1 4s infinite;
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 6px;
+}
+@keyframes run1 {
+0% {
+height: 0px;
+}
+50% { 
+height: 11px;
+}
+100% {
+height: 0px;   
 }
 }
 .main_content a {
@@ -80,7 +134,7 @@ color: black;
 .main_content a img {
 height: 50px;
 margin: 20px 0;
-z-index: 100;
+z-index: 10;
 }
 .main_content a h1 {
 margin-left: 10px;
@@ -120,9 +174,10 @@ border-color: #333;
 }
 }
 /* typing animation end */
-
-
-
+/* section{
+    min-height: 100vh;
+    min-height: 100dvh;
+} */
 
 /* .scrolling_wrapper {
 overflow-x: scroll;
