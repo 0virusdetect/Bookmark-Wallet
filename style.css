@@ -63,7 +63,7 @@ background-color:rgb(172, 180, 170);
 top:34px;
 left: 10px;
 position: absolute;
-animation: linear run 0.9s infinite;
+animation: linear run 1.5s infinite;
 }
 @keyframes run {
 0% {
@@ -154,7 +154,6 @@ overflow-x: auto;
 overflow-y: hidden;
 position: -webkit-sticky;
 position: sticky;
-background-color: #f2f2f2;
 top: 0;
 .car_d {
 flex: 0 0 auto;
@@ -175,6 +174,7 @@ scrollbar-width: none;
 }
 .car_d{
 padding: 14px 0px;
+  background-color:white;
 }
 .car_d:nth-last-child(even) {
 margin:0 16px;
