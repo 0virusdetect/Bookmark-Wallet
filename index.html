@@ -1058,6 +1058,36 @@ behavior: "smooth",
 // Initial call to handle scroll event on page load
 handleScroll();
 });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+const scrollingWrapper = document.querySelector(".scrolling_wrapper");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+scrollingWrapper.addEventListener('mousedown', (e) => {
+isDown = true;
+startX = e.pageX - scrollingWrapper.offsetLeft;
+scrollLeft = scrollingWrapper.scrollLeft;
+});
+
+scrollingWrapper.addEventListener('mouseleave', () => {
+isDown = false;
+});
+
+scrollingWrapper.addEventListener('mouseup', () => {
+isDown = false;
+});
+
+scrollingWrapper.addEventListener('mousemove', (e) => {
+if (!isDown) return;
+e.preventDefault();
+const x = e.pageX - scrollingWrapper.offsetLeft;
+const walk = (x - startX) * 2; // Adjust scroll speed
+scrollingWrapper.scrollLeft = scrollLeft - walk;
+});
+});
 
 </script>
 </body>
