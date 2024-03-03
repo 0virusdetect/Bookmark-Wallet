@@ -29,10 +29,6 @@ a {
 text-decoration: none;
 }
 
-body {
-background-color: #f2f2f2;
-}
-
 .bottom_button a {
 background-color: #0d0d0d;
 padding: 6px 14px;
@@ -56,24 +52,24 @@ background-color: #4d4d4d;
 position: relative;
 }
 .eyes {
-border: 1px solid rgb(172, 180, 170);
+border: 1px solid #29bd42;
 height: 10px;
 width:9px;
-background-color:rgb(172, 180, 170);
-top:34px;
+background-color:#29bd42;
+top:30px;
 left: 10px;
 position: absolute;
-animation: linear run 1.5s infinite;
+animation: linear run 4s infinite;
 }
 @keyframes run {
 0% {
-top: 34px;
+top: 30px;
 }
 50% { 
 top: 40px; 
 }
 100% {
-top: 34px;     
+top: 30px;     
 }
 }
 .main_content a {
@@ -154,7 +150,7 @@ overflow-x: auto;
 overflow-y: hidden;
 position: -webkit-sticky;
 position: sticky;
-background-color:whitesmoke;
+background-color:white;
 top: 0;
 .car_d {
 flex: 0 0 auto;
@@ -174,7 +170,7 @@ scrollbar-width: none;
 /* Firefox */
 }
 .car_d{
-padding: 14px 0px;
+padding: 12px 0px;
 }
 .car_d:nth-last-child(even) {
 margin:0 25px;
@@ -184,7 +180,7 @@ border: 1px solid #0d0d0d;
 border-left: 3px solid #0d0d0d;
 border-right: 3px solid #0d0d0d;
 border-radius: 6px;
-padding: 8px 10px;
+padding: 6px 10px;
 color: black;
 font-size: 15px;
 }
@@ -193,8 +189,8 @@ color: #817c7c;
 border-color: #817c7c;
 }
 .car_d a.active {
-color: rgb(124, 5, 5);
-border-color: rgb(185, 30, 30);
+color: #29bd42;
+border-color: #29bd42;
 }
 
 
