@@ -100,10 +100,9 @@ flex: 0 0 auto;
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  background-color: #f2f2f2;
   position: -webkit-sticky;
   position: sticky;
-  padding: 10px 0;
+  margin: 10px 0;
   top: 0;
   .car_d {
     flex: 0 0 auto;
@@ -121,18 +120,10 @@ flex: 0 0 auto;
   /* Firefox */
 }
 
-.car_d {
-  margin: 10px 8px;
+.car_d{
+  background-color: #f2f2f2;
+  padding: 10px 8px;
 }
-
-.car_d:first-child {
-  margin-left: 0;
-}
-
-.car_d:last-child {
-  margin-right: 0;
-}
-
 .car_d a {
   border: 1px solid #0d0d0d;
   border-left: 3px solid #0d0d0d;
@@ -141,6 +132,7 @@ flex: 0 0 auto;
   padding: 2px 8px;
   color: black;
   font-size: 15px;
+  margin:40px 0;
 }
 .car_d a:hover {
   color: #817c7c;
