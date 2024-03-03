@@ -35,7 +35,7 @@ background-color: #f2f2f2;
 
 .bottom_button a {
 background-color: #0d0d0d;
-padding: 4px 12px;
+padding: 8px 18px;
 position: fixed;
 border-radius: 4px;
 bottom: 20px;
@@ -132,7 +132,6 @@ border-color: #333;
 overflow-x: scroll;
 overflow-y: hidden;
 white-space: nowrap;
-background-color:whitesmoke;
 .car_d {
 display: inline-block;
 }
@@ -155,6 +154,7 @@ overflow-x: auto;
 overflow-y: hidden;
 position: -webkit-sticky;
 position: sticky;
+background-color:whitesmoke;
 top: 0;
 .car_d {
 flex: 0 0 auto;
