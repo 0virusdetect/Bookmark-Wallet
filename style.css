@@ -96,16 +96,15 @@ flex: 0 0 auto;
 } */
 
 .scrolling_wrapper {
-display: flex;
-flex-wrap: nowrap;
-overflow-x: auto;
+overflow-x: scroll;
 overflow-y: hidden;
+white-space: nowrap;
 position: -webkit-sticky;
 position: sticky;
 background-color: #f2f2f2;
 top: 0;
 .car_d {
-flex: 0 0 auto;
+display: inline-block;
 }
 }
 
