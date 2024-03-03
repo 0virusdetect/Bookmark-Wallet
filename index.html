@@ -425,37 +425,41 @@ type();
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Get all anchor links inside the navigation
-      const navLinks = document.querySelectorAll("car_d a");
+  // Get all anchor links inside the navigation
+  const navLinks = document.querySelectorAll(".car_d a");
 
-      // Loop through each link
-      navLinks.forEach(function(link) {
-        // Add click event listener to each link
-        link.addEventListener("click", function(event) {
-          event.preventDefault(); // Prevent the default behavior of the link
+  // Loop through each link
+  navLinks.forEach(function(link) {
+    // Add click and touch event listeners to each link
+    link.addEventListener("click", handleNavigation);
+    link.addEventListener("touchstart", handleNavigation);
+  });
 
-          // Remove 'active' class from all links
-          navLinks.forEach(function(link) {
-            link.classList.remove("active");
-          });
+  // Function to handle navigation when a link is clicked or touched
+  function handleNavigation(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
 
-          // Add 'active' class to the clicked link
-          link.classList.add("active");
-
-          // Get the target section's ID from the href attribute
-          const targetId = link.getAttribute("href");
-
-          // Scroll to the target section smoothly
-          document.querySelector(targetId).scrollIntoView({
-            behavior: "smooth"
-          });
-
-          // Add margin-top after scrolling to the section
-          const navbarHeight = document.querySelector('scrolling_wrapper').offsetHeight;
-          window.scrollBy(0, -navbarHeight); // Adjusts the scroll position by subtracting the height of the navbar
-        });
-      });
+    // Remove 'active' class from all links
+    navLinks.forEach(function(link) {
+      link.classList.remove("active");
     });
+
+    // Add 'active' class to the clicked link
+    this.classList.add("active");
+
+    // Get the target section's ID from the href attribute
+    const targetId = this.getAttribute("href");
+
+    // Scroll to the target section smoothly
+    document.querySelector(targetId).scrollIntoView({
+      behavior: "smooth"
+    });
+
+    // Add margin-top after scrolling to the section
+    const navbarHeight = document.querySelector('.scrollIntoView').offsetHeight;
+    window.scrollBy(0, -navbarHeight); // Adjusts the scroll position by subtracting the height of the navbar
+  }
+});
   </script>
 </body>
 
